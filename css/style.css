@@ -94,7 +94,7 @@
   box-sizing: border-box;
   /*横幅の解釈をpadding, borderまでとする*/
 }
-#input .done {
+#input #done {
   box-shadow: inset 0px 1px 0px 0px #f29c93;
   background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
   background-color: #fe1a00;
@@ -110,11 +110,11 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #b23e35;
 }
-#input .done:hover {
+#input #done:hover {
   background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
   background-color: #ce0100;
 }
-#input .done:active {
+#input #done:active {
   position: relative;
   top: 1px;
 }
