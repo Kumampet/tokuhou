@@ -118,3 +118,15 @@
   position: relative;
   top: 1px;
 }
+
+#output {
+  background-color: black;
+  position: absolute;
+}
+#output #content {
+  width: 100%;
+  height: 100%;
+}
+#output #content h1 {
+  color: blanchedalmond;
+}

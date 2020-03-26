@@ -1,6 +1,7 @@
 $(function () {
     $('#output').hide();//最初に結果の部分は隠す
     var phases_num = 3;//初期phase数
+    var share_num;
 
     $('.add-phase').on('click', function () {
         phases_num++;
@@ -16,5 +17,5 @@ $(function () {
             alert("最低でも1つ以上の段階が必要です。");
         }
     });
-
+    sessionStorage.setItem('share_num', phases_num);
 });
