@@ -1,15 +1,32 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-#input, #output {
+#input,
+#output {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-#input #phases .in {
-  margin: 10px;
-  padding: 0;
+#input {
+  height: auto;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#input #phases .in input {
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 3px;
+  /*ボックス角の丸み*/
+  border: 2px solid #ddd;
+  /*枠線*/
+  box-sizing: border-box;
+  /*横幅の解釈をpadding, borderまでとする*/
 }
 #input .phase-btn {
   width: 100%;
@@ -20,7 +37,28 @@
   text-decoration: none;
 }
 #input .phase-btn .add-phase {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
   display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
+}
+#input .phase-btn .add-phase:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+#input .phase-btn .add-phase:active {
+  position: relative;
+  top: 1px;
 }
 #input .phase-btn .delete-phase {
   box-shadow: inset 0px 1px 0px 0px #f29c93;
@@ -38,11 +76,45 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #b23e35;
 }
-#input .phase-btn .delete-phase :hover {
+#input .phase-btn .delete-phase:hover {
   background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
   background-color: #ce0100;
 }
-#input .phase-btn .delete-phase :active {
+#input .phase-btn .delete-phase:active {
+  position: relative;
+  top: 1px;
+}
+#input .result input {
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 3px;
+  /*ボックス角の丸み*/
+  border: 2px solid #ddd;
+  /*枠線*/
+  box-sizing: border-box;
+  /*横幅の解釈をpadding, borderまでとする*/
+}
+#input .done {
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  background-color: #fe1a00;
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+#input .done:hover {
+  background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+  background-color: #ce0100;
+}
+#input .done:active {
   position: relative;
   top: 1px;
 }

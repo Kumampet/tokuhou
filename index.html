@@ -7,6 +7,8 @@
     <title>特報ジェネレータ</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -16,15 +18,15 @@
             <br>基本的にラブライブフェスでのDay2の特報演出に準拠しています。
         </p>
 
-        <div class="phases">
+        <div id="phases">
             <h2 class="in phase1">
-                第一段階：<input type="text" name="text1" id="text" value="特報">
+                第1段階：<input type="text" name="text1" id="text" value="特報">
             </h2>
             <h2 class="in phase2">
-                第二段階：<input type="text" name="text2" id="text" value="なんと">
+                第2段階：<input type="text" name="text2" id="text" value="なんと">
             </h2>
             <h2 class="in phase3">
-                第三段階：<input type="text" name="text2" id="text" value="全国民に">
+                第3段階：<input type="text" name="text2" id="text" value="全国民に">
             </h2>
         </div>
         <div class="phase-btn">
@@ -34,6 +36,9 @@
         <h2 class="result">
             最終結果：<input type="text" name="result" id="text" value="現金10万円給付！！">
         </h2>
+        <div class="done-btn">
+            <a class="done">実行</a>
+        </div>
     </div>
 
     <div id="output">
