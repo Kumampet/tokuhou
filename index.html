@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>特報ジェネレータ</title>
 
-    <link rel="stylesheet" href=".css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div id="input">
-        <h1>ラブライブシリーズ「特報」ジェネレータ</h1>
+        <h1 id="title">ラブライブ「特報」ジェネレータ</h1>
+        <p id="experiment">ラブライブ！サンシャイン！！のライブで運営がよくやりがちな「特報」ムービーを作れるジェネレーターです。
+            <br>基本的にラブライブフェスでのDay2の特報演出に準拠しています。
+        </p>
 
         <div class="phases">
-            <h2 class="phase1">
-                第一段階：<input type="text" name="text1" id="text">
+            <h2 class="in phase1">
+                第一段階：<input type="text" name="text1" id="text" value="特報">
             </h2>
-            <h2 class="phase2">
-                第二段階：<input type="text" name="text2" id="text">
+            <h2 class="in phase2">
+                第二段階：<input type="text" name="text2" id="text" value="なんと">
+            </h2>
+            <h2 class="in phase3">
+                第三段階：<input type="text" name="text2" id="text" value="全国民に">
             </h2>
         </div>
+        <div class="phase-btn">
+            <a class="add-phase">段階を追加</a>
+            <a class="delete-phase">段階を削除</a>
+        </div>
         <h2 class="result">
-            最終結果：<input type="text" name="result" id="text">
+            最終結果：<input type="text" name="result" id="text" value="現金10万円給付！！">
         </h2>
     </div>
 
