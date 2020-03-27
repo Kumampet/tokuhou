@@ -17,5 +17,6 @@ $(function () {
             alert("最低でも1つ以上の段階が必要です。");
         }
     });
-    sessionStorage.setItem('share_num', phases_num);
+
+    sessionStorage.setItem(share_num, phases_num);
 });
