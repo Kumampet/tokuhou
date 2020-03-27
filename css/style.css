@@ -124,6 +124,9 @@
   background-color: black;
   position: absolute;
 }
+#output audio {
+  display: none;
+}
 #output #content {
   width: 100%;
   height: 100%;
